@@ -42,6 +42,7 @@ const RegistrationForm = () => {
       </form>
         {submitted && (
           <div style={{marginTop: "30px"}}>
+            <h2>登録内容</h2>
             <p>名前：{name}</p>
             <p>メール：{email}</p>
             <p>年齢：{age}</p>        
