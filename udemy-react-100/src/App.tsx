@@ -1,12 +1,12 @@
 import './App.css';
-import TodoList from './components/basic/Question15';
+import EventInfo from './components/basic/Question17';
 
 
 function App() {
 
   return (
     <>
-      <TodoList />
+      <EventInfo />
     </>
   )
 }
