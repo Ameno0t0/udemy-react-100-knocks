@@ -12,7 +12,7 @@ const EventInfo = () => {
       x: e.clientX,
       y: e.clientY
     });
-    setCounter(counter + 1);
+    setCounter((prev) => prev + 1);
     e.shiftKey? setBgColor('lightsteelblue') : setBgColor('White');
 
   };
