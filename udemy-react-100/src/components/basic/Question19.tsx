@@ -6,10 +6,16 @@ type Items = {
   text: string;
 }
 
+type KeyPressCount = {
+  Enter: number;
+  Escape: number;
+  Space: number;
+}
+
 const KeyboardEvents = () => {
   const [inputValue, setInputValue] = useState("");
   const [items, setItems] = useState<Items[]>([]);
-  const [keyPressCount, setKeyPressCount] = useState({
+  const [keyPressCount, setKeyPressCount] = useState<KeyPressCount>({
     Enter: 0,
     Escape: 0,
     Space: 0
